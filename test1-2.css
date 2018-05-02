@@ -1,0 +1,35 @@
+body{
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin: 0px;
+    padding-top: 50px;
+    float: left;
+    height: 880px;
+    width: 200px;
+    text-align: center;
+    color: #fff;
+    background-color: darkcyan;
+}
+.content{
+    float: left;
+    margin: 20px 20px;
+}
+ul li{
+    display: inline;
+    margin-right: 20px;
+}
+.it li{
+    display: block;
+    line-height: 30px;
+}
+.it li span{
+    display: block;
+}

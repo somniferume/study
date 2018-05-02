@@ -1,24 +1,20 @@
-*{
-	margin: 0;
-	padding: 0;
+body{
+    font-weight: bold;
 }
-div.part-left{
-	float: left;
-	width: 30%;
-	height: 800px;
-	background-color:skyblue;
-	font-weight: solid;
-	text-align: center;
-	padding-top: 50px;
-	color: white;
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-div.part-right{
-	margin-left: 30px;
-	padding-left: 30px;
-	float: left;
-	padding-top: 50px;
+ul li{
+    display: inline;
+    margin-right: 20px;
 }
-div.part-right div.right-one div p{
-	line-height: 25px;
-	display: inline;
+
+.it li{
+    display: block;
+    line-height: 30px;
+}
+.it li span{
+    display: block
 }
