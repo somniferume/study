@@ -1,0 +1,24 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+div.part-left{
+	float: left;
+	width: 30%;
+	height: 800px;
+	background-color:skyblue;
+	font-weight: solid;
+	text-align: center;
+	padding-top: 50px;
+	color: white;
+}
+div.part-right{
+	margin-left: 30px;
+	padding-left: 30px;
+	float: left;
+	padding-top: 50px;
+}
+div.part-right div.right-one div p{
+	line-height: 25px;
+	display: inline;
+}
