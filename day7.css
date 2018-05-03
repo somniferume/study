@@ -1,0 +1,29 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+header{
+	width: 100%;
+}
+header div.container{
+	width: 960px;
+	height: 80px;
+	margin: 0 auto;
+	background-color: #cccccc;
+}
+header div.container div.logo{
+	float: left;
+	margin-top: 10px;
+	margin-left: 3%;
+	width: 30%;
+	height: 60px;
+	background-color: #EEEEEE;
+}
+header div.container div.leader{
+	float: right;
+	margin-top: 10px;
+	margin-right: 3%;
+	width: 60%;
+	height: 60px;
+	background-color: #EEEEEE;
+}
