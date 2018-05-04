@@ -1,112 +1,151 @@
-*{
-	margin: 0;
-	padding: 0;
+body, div, p, h1, h2, h3, article, section, ul, li, ol{
+    padding: 0;
+    margin: 0;
 }
+body{
+    font-family: "微软雅黑";
+    font-size: 16px;
+}
+ul, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
+.clearfix:after { 
+    visibility:hidden; 
+    display:block; 
+    font-size:0; 
+    content:" "; 
+    clear:both; 
+    height:0;
+} 
+.clearfix { 
+    zoom:1;
+}
+
 header{
-	width: 100%;
-	background-color: #cccccc;
+    width: 100%;
+    background: #333;
+    height: 80px;
 }
-header div.container{
-	width: 960px;
-	height: 80px;
-	margin: 0 auto;
-	
+.logo{
+    float: left;
+    color: #fff;
+    padding-top: 20px;
 }
-header div.container div.logo img{
-	float: left;
-	margin-top: 10px;
-	margin-left: 3%;
-	width: 30%;
-	height: 60px;
-	/*background-color: #EEEEEE;*/
+.site{
+    float: right;
+    padding-top: 8px;
 }
-
-header div.container div.leader{
-	float: right;
-	margin-top: 10px;
-	margin-right: 3%;
-	width: 60%;
-	height: 60px;
-	text-align: right;
+.site li{
+    display: inline-block;
 }
-header div.container div.leader a{
-	color: white;
-	font-size: 14px;
-	font-weight: solid;
+.site li a{
+    color: #fff;
+    text-decoration: underline;
 }
-
-div.banner{	
-	position: relative;
-	width: 100%;
-	height: 300px;
-	margin-top: 10px;
-	background-color: #ccddff;
+#banner{
+    width: 100%;
+    height: 300px;
+    position: relative;
 }
-div.banner ol{
-	list-style: none;
-	position: absolute;
-	bottom: 30px;
-	left: 80%;
-	width: 180px;
-	height: 50px;
-/*	background:#fff000;*/
+#banner .pic{
+    background: #66bb33;
+    height: 300px;
 }
-div.banner ol li{
-	position: relative;
-	float: left;
-	width: 30px;
-	height: 30px;
-	line-height: 30px;
-	text-align: center;
-	margin-right: 10px;
-	background: #ccccdd;
+#banner ul{
+    position: absolute;
+    bottom: 20px;
+    right: 210px;
 }
-div.banner ol li.banner-hover{
+#banner ul li{
+    display: inline-block;
+    margin-left: 5px;
 }
-div.mainlead{
-	width: 100%;
-	height: 100px;
-	margin-top: 10px;
-	background-color: #CCFFAA;
+#banner ul li a{
+    display: inline-block;
+    width: 28px;
+    height: 34px;
+    border: 1px solid #335e1a;
+    background: #b2dd99;
+    line-height: 34px;
+    text-align: center;
+    color: #335e1a;
 }
-div.mainpart{
-	width: 960px;
-	height: 630px;
-	margin: 0 auto;
-	margin-top: 10px;
-	background-color: #DDFFDD;
+#banner ul li a.active{
+    height: 49px;
+    border: 1px solid #14250a;
+    background: #e0f1d6;
+    color: #14250a;
+    line-height: 64px;
 }
-div.mainpart ul.col-3{
-	list-style: none;
-	width: 960px;
-	height: 200px;
-	margin-top: 10px;
+.main_top{
+    border-bottom: 1px solid #dddddd;
+    height: 70px;
 }
-div.mainpart ul.col-3 li{
-	float: left;
-	border:solid 1px;
-	width: 300px;
-	height: 200px;
-	margin: 0 auto;
+.main_top ul{
+    padding-top: 20px;
 }
-div.mainpart ul.col-4{
-	list-style: none;
-	width: 960px;
-	height: 200px;
-	margin-top: 10px;
+.main_top li{
+    float: left;
 }
-div.mainpart ul.col-4 li{
-	float: left;
-	width: 235px;
-	height: 200px;
-	background-color: skyblue;
+.main_top li a{
+    display: inline-block; 
+    width: 104px;
+    height: 49px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    line-height: 49px;
+    color: #000;
+    background: #eee;
+}
+.main_top li a.tab_active{
+    border-bottom: 1px solid transparent;
+    background: #fff;
+}
+.content{
+    padding-top: 10px;
+}
+.content .row{
+    display: flex;
+}
+.content .row li{
+    border: 1px solid #ccc;
+    height: 174px;
+    text-align: center;
+    line-height: 174px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.content .row li.content1{
+    flex: 0 0 34%;
+}
+.content .row li.content3{
+    flex: 0 0 29.3%;
+}
+.content .row2 li{
+    flex: 0 0 24%;
+}
+.content .row3 li{
+    flex: 0 0 32%;
+}
+.content .row3 li.content10{
+    flex: 0 0 33.3%;
 }
 footer{
-	width: 100%;
-	height: 30px;
-	margin-top: 10px;
-	background-color: #cccccc;
-	text-align: center;
-	padding-top: 8px;
-	font-size: 14px;
+    width: 100%;
+    height: 120px;
+    background: #666;
+    text-align: center;
+    color: #fff;
+    padding-top: 30px;
 }
